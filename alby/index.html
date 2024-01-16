@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.15.0/dist/pdf-lib.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="index.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-wrapper">
+        <h1>ALBY'S PROGRAM</h1>
+        <form id="myForm">
+            <div class="inline">
+            <input type="text" id="codiceFiscale" name="codiceFiscale" placeholder="Codice Fiscale"><br><br>
+            </div>
+            <div class="inline">
+            <input type="text" id="cognome" name="cognome" placeholder="Cognome"><br><br>
+            <input type="text" id="nome" name="nome" placeholder="Nome"><br><br>
+            </div>
+            <div class="inline">
+            <input type="text" id="data" name="data" placeholder="Data di nascita"><br><br>
+            </div>
+            <div class="inline">
+            <input type="text" id="comune" name="comune" placeholder="Comune di nascita"><br><br>
+            <input type="text" id="provincia_nascita" name="provincia_nascita" placeholder="Provincia di nascita"><br><br>
+            </div>
+            <div class="inline">
+            <input type="text" id="residenza" name="residenza" placeholder="Residenza"><br><br>
+            <input type="text" id="provincia_residenza" name="provincia_residenza" placeholder="Provincia di residenza"><br><br>
+            </div>
+            <div class="inline">
+            <input type="text" id="indirizzo" name="indirizzo" placeholder="Indirizzo"><br><br>
+            <input type="text" id="numero" name="numero" placeholder="Numero"><br><br>
+            <input type="text" id="cap" name="cap" placeholder="CAP"><br><br>
+            </div>
+            <div class="inline">
+            <input type="text" id="telefono" name="telefono" placeholder="Telefono"><br><br>
+            <input type="text" id="cellulare" name="cellulare" placeholder="Cellulare"><br><br>
+            </div>
+            <div class="inline">
+            <input type="text" id="email" name="email" placeholder="E-mail"><br><br>
+            <input type="text" id="quota" name="quota" placeholder="Quota associativa versata €"><br><br>
+            </div>
+        
+            <!-- Altri campi del form -->
+            <div class="button-wrap">
+             <button type="button" onclick="fillPDF()">Riempi PDF</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
